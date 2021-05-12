@@ -1,33 +1,38 @@
 
 .container-fluid{
-    height: 100vh;
+   max-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 main{
     background-color: orange;
-    flex-grow: 1;
+    height: calc(100vh - 90px);
+    
 }
 
 footer{
     background-color: lightgreen;
-    flex-basis: 90px;
+    height: 90px;
 }
 .sidebar{
     background-color: maroon;
 }
 .upgrade{
     position: fixed;
-    width: 900px;
+    width: 100%;
     height: 100px;
-    top: 0px;
-    right: 100px;
-    bottom: 100px;
     background-color: palevioletred;
     border: 2px solid black;
 }
 .content{
     background-color: midnightblue;
     height: 100%;
+    overflow-y: scroll;
+}
+.example{
+    height: 200vh;
+    width: 200px;
+    margin: 0 auto;
+    background-color: red;
 }
