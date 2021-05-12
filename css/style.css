@@ -1,5 +1,5 @@
 body{
-    color: cornsilk;
+    color: white;
 
 }
 .container-fluid{
@@ -29,7 +29,7 @@ footer{
     height: 50px;
     position: fixed;
     top: 25px;
-    left: 50px;
+    left: 20px;
 }
 .upgrade{
     position: fixed;
@@ -57,25 +57,40 @@ footer{
 }
 
 .playlist li{
-    padding: 5px 0px 5px 15px;
-    
+    padding: 5px 0px 5px 15px;   
+}
+h4{
+    margin: 15px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
 }
 .playlist ul{
-    list-style: none;  
+    list-style: none;
+    font-size: 15px;  
 }
 #stop{
     border-left: 2px solid green;
 }
 .artist{
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 15px;
     width: 90%;
     text-align: left;
+    font-size: 15px;
     margin: 0 auto;
+    padding-bottom: 3px;
 }
+
 .ciao{
     width: 50px;
     height: 50px;
     margin-top: 100px;
+}
+.playlist img{
+    height: 20px;
+    vertical-align: middle;
 }
