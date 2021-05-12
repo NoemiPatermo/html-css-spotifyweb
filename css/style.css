@@ -7,8 +7,7 @@
 
 main{
     background-color: orange;
-    height: calc(100vh - 90px);
-    
+    height: calc(100vh - 90px); 
 }
 
 footer{
@@ -16,14 +15,24 @@ footer{
     height: 90px;
 }
 .sidebar{
-    background-color: maroon;
+    background-color:black;
+}
+#logo{
+    height: 50px;
+    margin-top: 10px;
 }
 .upgrade{
     position: fixed;
     width: 100%;
     height: 100px;
-    background-color: palevioletred;
-    border: 2px solid black;
+    background-color: #252525;
+}
+#push{
+    border-radius: 50px;
+    height: 50px;
+    width: 200px;
+    background-color: black;
+    color: cornsilk;
 }
 .content{
     background-color: midnightblue;
