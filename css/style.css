@@ -1,4 +1,6 @@
-
+body{
+    color: cornsilk;
+}
 .container-fluid{
    max-height: 100vh;
     display: flex;
