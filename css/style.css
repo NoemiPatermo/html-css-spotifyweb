@@ -1,0 +1,33 @@
+
+.container-fluid{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    background-color: orange;
+    flex-grow: 1;
+}
+
+footer{
+    background-color: lightgreen;
+    flex-basis: 90px;
+}
+.sidebar{
+    background-color: maroon;
+}
+.upgrade{
+    position: fixed;
+    width: 900px;
+    height: 100px;
+    top: 0px;
+    right: 100px;
+    bottom: 100px;
+    background-color: palevioletred;
+    border: 2px solid black;
+}
+.content{
+    background-color: midnightblue;
+    height: 100%;
+}
