@@ -1,5 +1,6 @@
 body{
     color: white;
+    font-family: 'Roboto', sans-serif;
 
 }
 .container-fluid{
@@ -85,6 +86,7 @@ a {
     margin: 0 auto;
     padding-bottom: 3px;
 }
+
 .artist span{
     font-size: 10px;
     color: lightslategray;
@@ -92,26 +94,43 @@ a {
 .user{
     display: inline-block;
 }
-
-.ciao{
-    width: 50px;
-    height: 50px;
-    margin-top: 100px;
+.menu{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 110px;   
+}
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;   
 }
 .playlist img{
     height: 20px;
     vertical-align: middle;
 }
+/*FOOTER */
 nav{
     display: flex;
     justify-content: space-between;
 }
-.first{
+nav ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+}
+
+.first img{
+    height: 60px;
+    margin: 15px;
     border: 3px solid green;
 }
 .second{
+    height: 60px;
     border: 3px solid red;
 }
 .third{
+    height: 60px;
     border: 3px solid yellow;
 }
+/* END FOOTER */
