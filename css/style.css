@@ -36,7 +36,8 @@ footer{
     width: 100%;
      height: 100px;
      margin-bottom: 150px;
-    background-color: #252525;
+    background-color: rgba(0, 0, 0, 0.8);
+
 }
 #push{
     border-radius: 50px;
@@ -93,4 +94,17 @@ a {
 .playlist img{
     height: 20px;
     vertical-align: middle;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.first{
+    border: 3px solid green;
+}
+.second{
+    border: 3px solid red;
+}
+.third{
+    border: 3px solid yellow;
 }
