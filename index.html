@@ -13,7 +13,7 @@
 </head>
 <body>
 <div class="container-fluid">
-        <main class="row">
+    <main class="row">
             <div class="sidebar col-lg-2 md-2 sm-2 xs-1">
                     <div class="logo-spotify">
                         <img id="logo"src="./img/logo.svg" alt="logo"> 
@@ -53,14 +53,14 @@
                     <h5 class="user">Jhon Doe</h5>
                 </div>
             </div>
-<div class="content col-lg-10 md-10 sm-10 xs-10">
+        <div class="content col-lg-10 md-10 sm-10 xs-10">
                 <div class="upgrade">
                     <button id="push">EFFETTUA L'UPGRADE</button>
                 </div>
 
                 <div class="menu">
                     <ul>
-                        <li>IN EVIDENZA</li>
+                        <li id="choose">IN EVIDENZA</li>
                         <li>PODCAST</li>
                         <li>CLASSIFICHE</li>
                         <li>GENERI E MOOD</li>
@@ -70,45 +70,43 @@
                 </div>
                 
 
-<div class="tracklist">
-    <div class="recent-clearfix">
-         <h2>Recently played</h2>
-
-            <div class="container-">  
-                <div class="artisti fl">
-                <img src="./img/metal_lifting.jpg" alt="">
-                <p>Heavy Metal</p>
-                <h6>Subtitle</h6>
-                </div>
-                <div class="artisti fl">
+            <div class="tracklist">
+                <div class="container clearfix"> 
+                    <h2>Recently played</h2>  
+                    <div class="artisti fl">
+                    <img src="./img/metal_lifting.jpg" alt="">
+                    <p>Heavy Metal</p>
+                    <h6>Subtitle</h6>
+                    </div>
+                    <div class="artisti fl">
                 <img src="./img/stranger.jpeg" alt="">
                 <p>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</p>
                 <h6>Kylie Dixon & Michael Stein</h6>
-                </div>  
-                <div class="artisti fl">
+                    </div>  
+                    <div class="artisti fl">
                 <img src="./img/aquietplace.jpeg" alt="">
                 <p>A quiet place</p>
                 <h6>Subtitle</h6>
-                </div>
-                 <div class="artisti fl">
+                    </div>
+                    <div class="artisti fl">
                     <img src="./img/split.jpeg" alt="">
                     <p>Split</p>
                     <h6>Subtitle</h6>
-                </div>
-                <div class="artisti fl">
+                    </div>
+                    <div class="artisti fl">
                     <img src="./img/cure.jpeg" alt="">
                     <p>A cure for wellness</p>
                     <h6>Subtitle</h6>
-                </div>
-                <div class="artisti fl">
+                    </div>
+                    <div class="artisti fl">
                     <img src="./img/sinister.jpeg" alt="">
                     <p>Sinister</p>
                     <h6>Subtitle</h6>
+                    </div>
                 </div>
             
-            
-    
-            <div class="mixed">  
+                <div class="container clearfix">
+            <div class="mixed fl">  
                 <h2 class="titolo">Creato per Jhon Doe</h2>
                 <h6 class="titolo">Più ascolti, più accurati saranno i suggerimenti.</h6>
             </div>   
@@ -120,11 +118,12 @@
                     <img src="./img/mixdaily.jpeg" alt="">
                     <p>Daily Mix 1</p>
             </div>
-        
-        <div class="popular">
-            <h2 class="titolo">Artisti più popolari</h2>
-            <h6 class="titolo">Più ascolti, più accurati saranno i suggerimenti.</h6>
-        </div>
+                </div>   
+                <div class="container clearfix">
+            <div class="popular fl">
+                <h2 class="titolo">Artisti più popolari</h2>
+                <h6 class="titolo">Più ascolti, più accurati saranno i suggerimenti.</h6>
+            </div>
                 <div class="artisti fl">
                     <img id="einaudi" src="./img/youg.jpeg" alt="">
                     <h6>amazing</h6>
@@ -132,40 +131,24 @@
                  <div class="artisti fl">
                     <img id="einaudi"  src="./img/einaudi.jpeg" alt="">
                     <h6>maestro</h6>
-                 </div>
-            </div>
-    </div>   
-</div>
-                
-</div>
-       </main>
+                </div>       
+                </div>     
+            </div>          
+        </div>
+</main>
 
     <footer>
-            <div class="first">
-                <ul>
-                  <li><img src="./img/sinister.jpeg" alt="artist"></li>
-                        <li class="song">Sinister</li>
-                        <li>Brano nome</li>
-                        <li><i class="far fa-heart"></i></li>
-                        <li><i class="far fa-folder"></i></li>
-                </ul>        
+            <div class="player-album">
+                 <div class="player-album-cover"></div>   
+                 <div class="player-album-title"></div>   
+                 <div class="player-album-icons"></div>
             </div>
-            <div class="second">
-                    <ul>
-                        <li><i class="fas fa-random"></i></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <ul>
-                        <li>0.25</li>
-                        <li>linea</li>
-                        <li>4.35</li>
-                </ul>
-            
+            <div class="player-controller">
+                 ciaygygouyfutyd7te  
             </div>   
-                <div class="third">terzo blocco</div>
+                <div class="player-audio">
+                    bla bla vla
+                </div>
         
     </footer>
 </div>

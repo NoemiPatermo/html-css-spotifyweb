@@ -53,7 +53,7 @@ main{
     height: 100%;
     overflow-y: scroll;
 }
-.clerfix::after{
+.clearfix::after{
     content: "";
     clear: both;
     display: table;
@@ -99,12 +99,17 @@ a {
     display: inline-block;
 }
 .menu{
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
     margin-top: 110px;   
 }
 .menu li{
     font-size: 13px;
+    font-weight: bolder;
+    color: lightslategray;
+}
+#choose{
+    border-bottom: 2px solid green;
 }
 .menu ul{
     display: flex;
@@ -117,77 +122,79 @@ a {
 }
 
 .tracklist{
-    padding: 15px;
-
+  margin: 25px;
 }
 
 .artisti{
     width:calc(100% / 6);
     text-align: center;
-    margin-top: 20px; 
+    margin-top: 30px; 
     padding: 5px;
 }
 .artisti img{
   width: 100%;    
 }
-
-.mixed{
-    height: 300px;
-    width: 300px; 
-    margin-bottom:5px;
-    margin-top: 30px;
+.artisti > h6{
+    color: lightslategray;
+    padding-top: 5px;
 }
-.popular{
-    height: 300px;
-    width: 300px;
-    
+
+.mixed , .popular{
+    height: 50px;
+    width: 100%; 
 }
 
 #einaudi{
     border-radius: 100px;
 }
 .titolo{
-    margin: 10px;
-}
-
-/*FOOTER */
-footer{
-    background-color: #282828;
-    height: 90px;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;  
-}
-footer ul{
-    display: flex; 
-    align-items: center;
-
-}
-footer li{
-    list-style: none; 
-}
-.song{
-    font-weight: bolder;
-}
-footer i {
-    margin: 10px;
-}
-.first{
-    border:2px solid white;
-    font-size: 15px;
-}
-.first img{
-    height: 60px;
     margin: 15px;
 }
 
-
-.second{
-    height: 60px;
-    border: 3px solid red;
+.mixed > h6{
+    color: lightslategray;
 }
-.third{
-    height: 60px;
-    border: 3px solid yellow;
+.popular > h6{
+    color: lightslategray;
+}
+/*FOOTER */
+footer{
+    /*background-color: #282828;*/
+    height: 90px;
+    display: flex;
+}
+[class*="player"]{
+    background-color: lightcoral;
+    border: 3px solid white;
+}
+.player-album , .player-audio{
+    flex-basis: 230px;
+    height: 100%;
+} 
+.player-controller{
+    height: 100%;
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+.player-album{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.player-album-cover{
+    width: 20%;
+    height: 100%;
+    border: 3px solid greenyellow;
+}
+.player-album-title{
+    width: 50%;
+    border: 3px solid greenyellow;
+}
+.player-album-icons{
+    width: 30%;
+    border: 3px solid greenyellow;
+}
+.player-album-cover img{
+    width: 100%;
 }
 /* END FOOTER */
