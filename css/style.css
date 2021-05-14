@@ -10,14 +10,10 @@ body{
 }
 
 main{
-    background-color: orange;
+    background-color:#141922;
     height: calc(100vh - 90px); 
 }
 
-footer{
-    background-color: #282828;
-    height: 90px;
-}
 .sidebar{
     background-color:black;
     position: relative;
@@ -53,9 +49,17 @@ footer{
     top: 25px;
 }
 .content{
-    background-color: midnightblue;
+    background-color:#141922;
     height: 100%;
     overflow-y: scroll;
+}
+.clerfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.fl{
+    float: left;
 }
 
 .playlist li{
@@ -99,6 +103,9 @@ a {
     margin: 0 auto;
     margin-top: 110px;   
 }
+.menu li{
+    font-size: 13px;
+}
 .menu ul{
     display: flex;
     justify-content: space-around;
@@ -108,25 +115,73 @@ a {
     height: 20px;
     vertical-align: middle;
 }
-/*FOOTER */
-nav{
-    display: flex;
-    justify-content: space-between;
-    
-}
-nav ul{
-    display: flex;
-}
-nav li{
-    list-style: none;
-    margin-top: 15px;
+
+.tracklist{
+    padding: 15px;
+
 }
 
+.artisti{
+    width:calc(100% / 6);
+    text-align: center;
+    margin-top: 20px; 
+    padding: 5px;
+}
+.artisti img{
+  width: 100%;    
+}
+
+.mixed{
+    height: 300px;
+    width: 300px; 
+    margin-bottom:5px;
+    margin-top: 30px;
+}
+.popular{
+    height: 300px;
+    width: 300px;
+    
+}
+
+#einaudi{
+    border-radius: 100px;
+}
+.titolo{
+    margin: 10px;
+}
+
+/*FOOTER */
+footer{
+    background-color: #282828;
+    height: 90px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;  
+}
+footer ul{
+    display: flex; 
+    align-items: center;
+
+}
+footer li{
+    list-style: none; 
+}
+.song{
+    font-weight: bolder;
+}
+footer i {
+    margin: 10px;
+}
+.first{
+    border:2px solid white;
+    font-size: 15px;
+}
 .first img{
     height: 60px;
     margin: 15px;
-    border: 3px solid green;
 }
+
+
 .second{
     height: 60px;
     border: 3px solid red;
