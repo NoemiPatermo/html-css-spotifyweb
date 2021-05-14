@@ -159,40 +159,51 @@ a {
 }
 /*FOOTER */
 footer{
-    /*background-color: #282828;*/
+    background-color: #282828;
     height: 90px;
     display: flex;
 }
 [class*="player"]{
-    background-color: lightcoral;
-    border: 3px solid white;
+    border: 1px solid white;
 }
 .player-album , .player-audio{
     flex-basis: 230px;
-    height: 100%;
+    /*height: 100%;*/
 } 
 .player-controller{
     height: 100%;
     flex-grow: 1;
     flex-basis: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10px;
 }
+.player-controller-icons{
+    padding:  10px;
+}
+
 .player-album{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 0 10px;
 }
 .player-album-cover{
     width: 20%;
-    height: 100%;
-    border: 3px solid greenyellow;
+
 }
 .player-album-title{
     width: 50%;
-    border: 3px solid greenyellow;
+}
+.player-album-title h2{
+    font-size: 12px;
+}
+.song{
+    font-size: 10px;
 }
 .player-album-icons{
     width: 30%;
-    border: 3px solid greenyellow;
 }
 .player-album-cover img{
     width: 100%;
