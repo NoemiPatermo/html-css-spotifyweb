@@ -61,6 +61,31 @@ main{
 .fl{
     float: left;
 }
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 90px);
+}
+
+.playlist{
+    display: flex;
+    flex-direction: column;
+}
+.top-playlist{
+    display: flex;
+    flex-direction: column;
+}
+.central-playlist{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: auto;
+}
+.bottom-playlist{
+    display: flex;
+    flex-direction: column;
+}
 
 .playlist li{
     padding: 5px 0px 5px 15px;   
@@ -80,7 +105,7 @@ a {
 #stop{
     border-left: 2px solid green;
 }
-.artist{
+.bottom-playlist{
     position: absolute;
     bottom: 10px;
     left: 15px;
@@ -163,9 +188,7 @@ footer{
     height: 90px;
     display: flex;
 }
-[class*="player"]{
-    border: 1px solid white;
-}
+
 .player-album , .player-audio{
     flex-basis: 230px;
     /*height: 100%;*/
@@ -176,15 +199,32 @@ footer{
     flex-basis: 50%;
     display: flex;
     justify-content: space-around;
-    
+ 
     padding: 0 10px;
 }
-.player-controller-icons{
-    padding:  20px;
+.player-controller-icons i{
+
+   
+    margin: 10px;
     font-size: 15px;
 }
-
-
+.player-controller-icons i:nth-child(3){
+    font-size: 25px;
+}
+.bar-time{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+.time{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.slider {
+    margin-bottom: 10px; 
+    width: 400px;  
+  }
 .player-album{
     display: flex;
     justify-content: space-around;
@@ -206,8 +246,22 @@ footer{
 }
 .player-album-icons{
     width: 30%;
+    font-size: 15px;
+    padding: 10px;
 }
 .player-album-cover img{
     width: 100%;
+}
+.player-audio{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.player-audio-icons i{
+    font-size: 15px;
+    margin: 3px;
+}
+.bar{
+    width: 150px;
 }
 /* END FOOTER */

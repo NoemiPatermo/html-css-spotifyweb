@@ -19,6 +19,7 @@
                         <img id="logo"src="./img/logo.svg" alt="logo"> 
                     </div>
             <div class="playlist">
+                <div class="top-playlist">
                     <ul>
                         <li id="stop">
                             <img src="./img/home.svg" alt="home">
@@ -33,6 +34,8 @@
                             <a href="#"> La tua libreria</a>
                         </li>
                     </ul>
+                </div>    
+                    <div class="central-playlist">
                         <h4>PLAYLIST</h4>
                     <ul>
                         <li> <i class="fas fa-plus-square fa-lg"></i> Crea Playlist</li>
@@ -44,8 +47,9 @@
                         <li>Nome Playlist</li>
                         <li>Nome Playlist</li>
                     </ul>
+                    </div>
             </div>
-                <div class="artist">
+                <div class="bottom-playlist">
                     <i style="font-size: 10px; color: lightslategray;"class="fas fa-arrow-circle-down"></i>
                     <span>Installa app</span>
                     <hr>
@@ -158,11 +162,23 @@
                      <i class="far fa-play-circle"></i>
                      <i class="fas fa-step-forward"></i>
                      <i class="fas fa-redo-alt"></i>
+                        <div class="bar-time">
+                            <div class="time">0:25</div>
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                        <div class="time">4:35</div>
+                        </div>
                  </div>
+                
             </div>   
-                <div class="player-audio">
-                    bla bla vla
-                </div>
+            
+            <div class="player-audio">
+                    <div class="player-audio-icons">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-desktop"></i>
+                    <i class="fas fa-volume-up"></i>
+                    </div>
+                    <input type="range" min="1" max="100" value="50" class="bar" id="myRange">  
+            </div>
         
     </footer>
 </div>
