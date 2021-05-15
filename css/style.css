@@ -69,29 +69,32 @@ main{
     flex-direction: column;
     justify-content: center; 
     flex-shrink: 0; 
+    flex-grow: 0;
 }
 .top-playlist li{
     padding: 5px 0px 5px 5px; 
     list-style: none;  
 }
-
-.top-playlist li:first-child{
-    font-weight:bolder;
+#casa{
+    color:white;
+    font-weight: bolder;
 }
 
-a {
+.top-playlist a{
     text-decoration: none;
-    color: white;
+    color:lightslategray;
     font-size: 15px;
 }
 #stop{
     border-left: 2px solid green;
 }
+#house{
+    color:white
+}
 
 .top-playlist img{
     height: 20px;
-    vertical-align: middle;
-   
+    vertical-align: middle;   
 }
 .central-playlist{
     display: flex;
@@ -108,6 +111,7 @@ a {
 }
 .central-playlist i{
     font-size: 25px;
+    margin-top: 5px;
 }
 .central-playlist li:first-child{
     font-size: 15px;
@@ -115,14 +119,15 @@ a {
     font-weight: bolder;
 }
 .central-playlist ul{
+    color: lightslategray;
     list-style: none;
     font-size: 13px;
 }
 
 .bottom-playlist{
    flex-direction: column;
-   flex-shrink: 0;
-    width: 90%; 
+   flex-shrink: 0; 
+   flex-grow: 0; 
     margin-bottom: 10px; 
 }
 .bottom-playlist span{
@@ -130,6 +135,9 @@ a {
 }
 .bottom-playlist i:first-child{
     font-size: 10px;
+    color: lightslategray;
+}
+.bottom-playlist span{
     color: lightslategray;
 }
 .bottom-playlist i{
@@ -165,16 +173,16 @@ a {
   margin: 25px;
 }
 
-.artisti{
+.author{
     width:calc(100% / 6);
     text-align: center;
     margin-top: 30px; 
     padding: 5px;
 }
-.artisti img{
+.author img{
   width: 100%;    
 }
-.artisti > h6{
+.author > h6{
     color: lightslategray;
     padding-top: 5px;
 }
@@ -198,7 +206,46 @@ a {
     color: lightslategray;
 }
 /*END SECTION ALBUM/*
-
+/*HOVER*/
+.on{
+    position: relative;
+}
+.on i{
+    position: absolute;
+    transform: translate(-50% , -50%);
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 50px;
+    display: none;
+}
+.on img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.on:hover i{
+    display:block;
+    cursor: pointer;
+}
+.menu li:hover{
+    color: white;
+    cursor: pointer;
+}
+.central-playlist li:hover{
+    color: white;
+    cursor: pointer;
+}
+.bottom-playlist span:hover{
+    color: white;
+    cursor: pointer;
+}
+.top-playlist a:hover{
+    color: white;
+    cursor: pointer;
+}
+#push:hover{
+    transform: scale(1.1);
+}
 /*FOOTER */
 footer{
     background-color: #282828;
@@ -216,7 +263,6 @@ footer{
     flex-basis: 50%;
     display: flex;
     justify-content: space-around;
- 
     padding: 0 10px;
 }
 .player-controller-icons i{
