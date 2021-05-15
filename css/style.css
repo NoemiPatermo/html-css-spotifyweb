@@ -13,41 +13,6 @@ main{
     background-color:#141922;
     height: calc(100vh - 90px); 
 }
-
-.sidebar{
-    background-color:black;
-    position: relative;
-}
-.logo-spotify{
-    height: 100px;
-    width: 100%;
-}
-#logo{
-    height: 50px;
-    position: fixed;
-    top: 25px;
-    left: 20px;
-}
-.upgrade{
-    position: fixed;
-    width: 100%;
-    height: 100px;
-    margin-bottom: 150px;
-    background-color: rgba(0, 0, 0, 0.8);
-
-}
-#push{
-    border-radius: 50px;
-    height: 50px;
-    width: 200px;
-    border: 2px solid white;
-    background-color: black;
-    color: cornsilk;
-    position: fixed;
-    z-index:1001;
-    right: 25px;
-    top: 25px;
-}
 .content{
     background-color:#141922;
     height: 100%;
@@ -61,68 +26,122 @@ main{
 .fl{
     float: left;
 }
+/*LOGO*/
+.logo-spotify{
+    height: 100px;
+    width: 100%;
+}
+#logo{
+    height: 50px;
+    margin-top: 20px;
+}
+/*BUTTON*/
+.upgrade{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 150px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#push{
+    border-radius: 50px;
+    height: 50px;
+    width: 200px;
+    border: 2px solid white;
+    background-color: black;
+    color: cornsilk;
+    position: fixed;
+    z-index:1001;
+    right: 25px;
+    top: 25px;
+}
+/*SIDEBAR*/
+
 .sidebar{
     display: flex;
     flex-direction: column;
     height: calc(100vh - 90px);
-}
-
-.playlist{
-    display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    background-color:black;
 }
 .top-playlist{
     display: flex;
     flex-direction: column;
+    justify-content: center; 
+    flex-shrink: 0; 
 }
-.central-playlist{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    flex-shrink: 1;
-    overflow: auto;
-}
-.bottom-playlist{
-    display: flex;
-    flex-direction: column;
+.top-playlist li{
+    padding: 5px 0px 5px 5px; 
+    list-style: none;  
 }
 
-.playlist li{
-    padding: 5px 0px 5px 15px;   
+.top-playlist li:first-child{
+    font-weight:bolder;
 }
-h4{
-    margin: 15px;
-}
+
 a {
     text-decoration: none;
     color: white;
     font-size: 15px;
 }
-.playlist ul{
-    list-style: none;
-    font-size: 15px;  
-}
 #stop{
     border-left: 2px solid green;
 }
-.bottom-playlist{
-    position: absolute;
-    bottom: 10px;
-    left: 15px;
-    width: 90%;
-    text-align: left;
-    line-height: 30px;
-    margin: 0 auto;
-    padding-bottom: 3px;
+
+.top-playlist img{
+    height: 20px;
+    vertical-align: middle;
+   
+}
+.central-playlist{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0px 5px 5px;
+    line-height: 25px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow-y: auto;
 }
 
-.artist span{
+.central-playlist h4{
+    margin: 5px;
+}
+.central-playlist i{
+    font-size: 25px;
+}
+.central-playlist li:first-child{
+    font-size: 15px;
+    font-size: medium;
+    font-weight: bolder;
+}
+.central-playlist ul{
+    list-style: none;
+    font-size: 13px;
+}
+
+.bottom-playlist{
+   flex-direction: column;
+   flex-shrink: 0;
+    width: 90%; 
+    margin-bottom: 10px; 
+}
+.bottom-playlist span{
+    font-size: small;
+}
+.bottom-playlist i:first-child{
     font-size: 10px;
     color: lightslategray;
 }
+.bottom-playlist i{
+    font-size: 15px;
+}
 .user{
     display: inline-block;
+    font-size: 15px;
 }
+/*END SIDEBAR*/
+
+/*SECTION ALBUM*/
 .menu{
     width: 50%;
     margin: 0 auto;
@@ -140,10 +159,6 @@ a {
     display: flex;
     justify-content: space-around;
     list-style: none;   
-}
-.playlist img{
-    height: 20px;
-    vertical-align: middle;
 }
 
 .tracklist{
@@ -182,6 +197,8 @@ a {
 .popular > h6{
     color: lightslategray;
 }
+/*END SECTION ALBUM/*
+
 /*FOOTER */
 footer{
     background-color: #282828;
