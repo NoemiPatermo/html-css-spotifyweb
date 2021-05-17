@@ -37,9 +37,9 @@ main{
     height: 50px;
     margin-top: 20px;
 }
-.loghino{
+.logo-small{
     display:none ;
-    height: 20px;
+   
 }
 #logo-2{
     height: 50px;
@@ -313,10 +313,11 @@ footer{
 .time{
     margin-right: 10px;
     margin-left: 10px;
+    font-size: 10px;
 }
 .slider {
     margin-bottom: 5px; 
-    width: 400px;  
+    width: 100%;  
   }
   
 .player-album{
@@ -353,14 +354,19 @@ footer{
     justify-content: flex-end;
     align-items: center;
 }
+.player-audio-icons{
+    display: flex;
+}
 .player-audio-icons i{
     font-size: 10px;
-    margin: 3px;
+    margin: 3px;  
+}
+.bar-2{
+    width: 100%;   
 }
 .bar{
     width: 150px;
 }
-
 /* END FOOTER */
 
 /*DIVERSI DEVICE*/
@@ -387,7 +393,30 @@ footer{
         .author{
             width:calc(100% / 2 );
             height: 320px;
-     
-
      } 
     }
+
+@media screen and (max-width:576px) {
+        .logo-small{
+            display: block;
+        }
+        .logo-spotify{
+            display: none;
+        }
+        
+        .top-playlist a{
+            display: none;
+        }
+       
+        .central-playlist{
+            display: none;
+        }
+        .bottom-playlist span{
+            display: none;
+        }
+        .bottom-playlist h5{
+            display: none;
+        }
+        
+        
+}
