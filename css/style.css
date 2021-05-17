@@ -1,6 +1,6 @@
 body{
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', serif;
 
 }
 .container-fluid{
@@ -17,6 +17,8 @@ main{
     background-color:#141922;
     height: 100%;
     overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
 }
 .clearfix::after{
     content: "";
@@ -35,12 +37,21 @@ main{
     height: 50px;
     margin-top: 20px;
 }
+.loghino{
+    display:none ;
+    height: 20px;
+}
+#logo-2{
+    height: 50px;
+    margin-top:10px;
+}
 /*BUTTON*/
 .upgrade{
     position: fixed;
     width: 100%;
     height: 100px;
     margin-bottom: 150px;
+    z-index: 1000;
     background-color: rgba(0, 0, 0, 0.8);
 }
 #push{
@@ -151,22 +162,23 @@ main{
 
 /*SECTION ALBUM*/
 .menu{
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 110px;   
 }
 .menu li{
     font-size: 13px;
+    padding-right: 50px;
     font-weight: bolder;
     color: lightslategray;
 }
-#choose{
-    border-bottom: 2px solid green;
-}
+
 .menu ul{
     display: flex;
-    justify-content: space-around;
-    list-style: none;   
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none; 
+   
 }
 
 .tracklist{
@@ -174,7 +186,7 @@ main{
 }
 
 .author{
-    width:calc(100% / 6);
+    width:calc(100% / 6 );
     text-align: center;
     margin-top: 30px; 
     padding: 5px;
@@ -263,6 +275,7 @@ footer{
     background-color: #282828;
     height: 90px;
     display: flex;
+    position: relative;
 }
 
 .player-album , .player-audio{
@@ -279,16 +292,17 @@ footer{
 }
 .player-controller-icons i{
     margin: 10px;
-    font-size: 15px;
+    font-size: 10px;
 }
 .play-icons{
     display: flex;
     justify-content: space-around;
-    line-height: 25px;
+    line-height: 20px;
     margin-top: 10px;
 }
 .player-controller-icons i:nth-child(3){
     font-size: 25px;
+    margin-top: 3px;
 }
 .bar-time{
     display: flex;
@@ -340,10 +354,38 @@ footer{
     align-items: center;
 }
 .player-audio-icons i{
-    font-size: 15px;
+    font-size: 10px;
     margin: 3px;
 }
 .bar{
     width: 150px;
 }
+
 /* END FOOTER */
+
+/*DIVERSI DEVICE*/
+
+
+@media screen and (max-width:991px){
+    .author{
+        width:calc(100% / 4 );
+        height: 230px;
+        text-align: center;
+        margin-top: 30px; 
+        padding: 5px;
+    }
+    .menu ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;   
+    }
+    
+    }
+
+@media screen and (max-width:767px) {
+        .author{
+            width:calc(100% / 2 );
+            height: 320px;
+      
+    }
