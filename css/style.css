@@ -273,9 +273,9 @@ footer i:hover{
 /*FOOTER */
 footer{
     background-color: #282828;
-    height: 90px;
+    height: 80px;
     display: flex;
-    position: relative;
+     position: relative;
 }
 
 .player-album , .player-audio{
@@ -362,7 +362,8 @@ footer{
     margin: 3px;  
 }
 .bar-2{
-    width: 100%;   
+    width: 120px;
+    padding-right: 15px;   
 }
 .bar{
     width: 150px;
